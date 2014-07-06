@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Html Form</title>
+  </head>
+  <body>
+	<div id="div_main" style="background-color:#F0F0F0;margin:0 auto; width:600px;padding:10px">
+		<h1 style="text-align:center">HTML form Excercise</h1  >
+		<p><span style="color:red">Please note :</span> This example Demonstrate HTML forms can be used.Submit button should<br>
+			submit the button and reset the form(revert the changes in form fields).The
+			form <br>layout should be the same as below.
+		</p>
+		<code style="margin-left:20px"><strong>Contact form</strong></code>
+			<br>
+			<br>
+		<form id="Contact_form" name="Contact_form" action="" method="get">
+			<table>
+				<tr>
+					<td>
+						Your name<span style="color:red">*</span>:
+					</td>
+					<td>
+						<input type="text" size="40" name="User_name" id="User_name" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						E-mail<span style="color:red">*</span>:
+					</td>
+					<td>
+						<input type="email" name="User_Email" id="User_Email" style="background-color:yellow" size="40" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Phone Number<span style="color:red">*</span>:
+					</td>
+					<td>
+						<input type="tel" name="User_Phn" id="User_Phn" style="background-color:yellow" size="40" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Website<span style="color:red">*</span>:
+					</td>
+					<td>
+						<input type="text" name="User_Web" id="User_Web" value="http://" size="50" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Comments<span style="color:red">*</span>:
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea rows="7" cols="40" id="User_Comments" name="User_Comments" required ></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<br>
+					</td>
+				</tr>
+		</table>
+		<br>
+			<strong>Text Field</strong>
+		<br>
+				Your name:<input name="Your_name" id="Your_name" type="text" style="background-color:yellow;" size="40">
+		<br>
+		<br>
+			<strong>Password field</strong>
+		<br>
+				Password:<input name="Password" id="Password" type="password" size="40">
+		<br>
+		<br>
+			<strong>Radio Buttons</strong><br>
+				Do You like pizza?<br>
+					<input type="radio" name="pizza" id="pizza_1">Yes<br>
+					<input type="radio" name="pizza" id="pizza_2">No<br>
+					<input type="radio" name="pizza" id="pizza_3">Maybe<br>
+					<input type="radio" name="pizza" id="pizza_4">Never tried<br>
+		<br>
+			<strong>Check Box</strong><br>
+				<input type="checkbox" id="chk" name="chk"> Check this box if you like our service<br>
+		<br>
+			<strong>Text area</strong><br>
+				Anything you would Like to say?<br>
+					<textarea rows="7" cols="40" id="Record" name="Record"></textarea>
+		<br>
+		<br>
+			I Like<br>
+				<select name="like" size="5" id="like" multiple >
+					<option> mushrooms </option>
+					<option> green peppers </option>
+					<option> onions  </option>
+					<option> tomatoes </option>
+					<option> olives </option>
+				</select>
+		<br>
+		<br>
+			<strong>Menu</strong><br>
+				Your Favourite color:<br>
+				<select name="color" id="color">
+					<option value="none">--Select--</option>
+					<option value="red">Red</option>
+					<option value="green">Green</option>
+					<option value="blue">Blue</option>
+				</select>
+		<br>
+		<br>
+			<strong>Attach File</strong><br>
+				<input type="text" size="40" name="File_address" id="File_address">
+				<input type="file" name="File" id="File">
+		<br>
+		<br>
+			<strong>Buttons</strong><br>
+				<button type="submit" value="Submit">Submit</button>
+				<button type="reset" value="Reset">Reset</button>
+	</form>
+	</div>
+  </body>
+</html>
